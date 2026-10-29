@@ -1,0 +1,9 @@
+.cache/
+.tools/
+artifacts/
+dist/
+*.exe
+__pycache__/
+AGENTS.md
+events-demo.jsonl
+report-demo.json

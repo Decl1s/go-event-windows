@@ -1,0 +1,9 @@
+{
+  "application": {"go": "1.27.3", "direct_modules": [], "transitive_modules": []},
+  "development": {"python": "3.14.4", "python_packages": [], "git_observed": "2.53.0"},
+  "actions": {
+    "actions/checkout": {"version": "7.0.1", "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1"},
+    "actions/setup-go": {"version": "7.0.0", "commit": "b7ad1dad31e06c5925ef5d2fc7ad053ef454303e"},
+    "actions/setup-python": {"version": "7.1.0", "commit": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0"}
+  }
+}

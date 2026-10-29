@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Я создаю синтетический JSONL", "type": "process", "command": "go", "args": ["run", "./cmd/windowlab", "demo", "-out", "events-demo.jsonl"], "options": {"cwd": "${workspaceFolder}", "env": {"GOTOOLCHAIN": "go1.27.3"}}, "problemMatcher": []},
+    {"label": "Я строю окна 5m с lag 2m", "type": "process", "command": "go", "args": ["run", "./cmd/windowlab", "run", "-in", "events-demo.jsonl", "-out", "report-demo.json"], "options": {"cwd": "${workspaceFolder}", "env": {"GOTOOLCHAIN": "go1.27.3"}}, "problemMatcher": []},
+    {"label": "Я проверяю проект", "type": "process", "command": "python", "args": ["scripts/ci.py"], "options": {"cwd": "${workspaceFolder}", "env": {"GOTOOLCHAIN": "go1.27.3", "PYTHONUTF8": "1"}}, "problemMatcher": []}
+  ]
+}
